@@ -18,7 +18,12 @@ Thumbs.db
 *.tmp
 *.bak
 
-# ⚠️ 本仓不追踪任何工具代码；工具在
-#    ~/.config/opencode/skills/bio-error-vault/ 另一个仓库
+# ⚠️ 本仓远端是公开的（mc-lhz/StudyDbDatabase），只放结构，不放真实错题。
+# 注意：下面并没有拦住 data/subjects/*/errors|points|exams/ 下的 .md，
+# 第一条防线是纪律——录完真实错题不要 git add -A。
+# 要自动兜底就把 README 里那段规则取消注释。
+
+# 本仓不追踪工具代码；工具在
+# ~/.config/opencode/skills/bio-error-vault/ 另一个仓库
 tools/
 __init__.py
