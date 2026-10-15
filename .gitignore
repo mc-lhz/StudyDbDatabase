@@ -1,0 +1,24 @@
+# 卷子原图：确认前是草稿，不入 git
+data/inbox/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# 临时文件
+*.tmp
+*.bak
+
+# ⚠️ 本仓不追踪任何工具代码；工具在
+#    ~/.config/opencode/skills/bio-error-vault/ 另一个仓库
+tools/
+__init__.py
