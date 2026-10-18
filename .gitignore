@@ -1,4 +1,4 @@
-# 卷子原图：确认前是草稿，不入 git
+# ⚠️ 原始卷子照片：含水印、考号、姓名，永不上传
 data/inbox/
 
 # Python
@@ -18,10 +18,12 @@ Thumbs.db
 *.tmp
 *.bak
 
-# ⚠️ 本仓远端是公开的（mc-lhz/StudyDbDatabase），只放结构，不放真实错题。
-# 注意：下面并没有拦住 data/subjects/*/errors|points|exams/ 下的 .md，
-# 第一条防线是纪律——录完真实错题不要 git add -A。
-# 要自动兜底就把 README 里那段规则取消注释。
+# ⚠️ 本仓远端是公开的（mc-lhz/StudyDbDatabase），现在**照常推送**，但必须先脱敏：
+#   真实校名 / 命题审核教师姓名 / 考号 —— 一律不入库，提交前写「某中学」。
+# git 历史不可逆：删文件不等于删历史，所以脱敏要在**第一次 commit 之前**做完。
+# 自动兜底：tools/Check/ValidateRecords.py 里的 SENSITIVE 反向闸门，
+# 命中即以退出码 5 拒绝（跑它再 push，别靠自觉）。
+# 原始照片的兜底就是上面第一行 data/inbox/。
 
 # 本仓不追踪工具代码；工具在
 # ~/.config/opencode/skills/bio-error-vault/ 另一个仓库
