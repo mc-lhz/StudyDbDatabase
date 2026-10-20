@@ -26,6 +26,6 @@ Thumbs.db
 # 原始照片的兜底就是上面第一行 data/inbox/。
 
 # 本仓不追踪工具代码；工具在
-# ~/.config/opencode/skills/bio-error-vault/ 另一个仓库
+# ~/.config/opencode/skills/StudyDb/ 另一个仓库
 tools/
 __init__.py
